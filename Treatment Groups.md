@@ -11,20 +11,3 @@ output:
 
 There are two treatment groups included in this data: those 
 undertaking the digatoxin treatment, and those in the control group. 
-
-
-# Shiny
-
-library(shiny)
-install.packages(c("shinylive", "httpuv"))
-
-ui <- fluidPage(
-  
-)
-
-server <- function(input, output) {
-  
-}
-
-shinyApp(ui, server)
-
