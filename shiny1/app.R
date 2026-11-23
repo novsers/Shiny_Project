@@ -6,6 +6,9 @@
 #
 #    https://shiny.posit.co/
 #
+library(shiny)
+install.packages(c("shinylive", "httpuv"))
+
 
 library(shiny)
 
@@ -49,3 +52,5 @@ server <- function(input, output) {
 
 # Run the application 
 shinyApp(ui = ui, server = server)
+
+shinylive::export(appdir = "myapp", destdir = "docs")
