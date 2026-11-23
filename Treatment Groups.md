@@ -2,6 +2,10 @@ Part 1: Treatment Groups
 ================
 novsers
 2026-11-21
+output:
+  github_document:
+    df_print: paged
+    runtime: shiny
 
 ## DIG Treatment Groups
 
@@ -9,12 +13,16 @@ There are two treatment groups included in this data: those
 undertaking the digatoxin treatment, and those in the control group. 
 
 
+# Shiny
 
-## Including Plots
+library(shiny)
 
-You can also embed plots, for example:
+ui <- fluidPage(
+  
+)
 
-![](rmarkdownshiny_files/figure-gfm/pressure-1.png)<!-- -->
+server <- function(input, output) {
+  
+}
 
-Note that the `echo = FALSE` parameter was added to the code chunk to
-prevent printing of the R code that generated the plot.
+shinyApp(ui, server)
