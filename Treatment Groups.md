@@ -16,6 +16,7 @@ undertaking the digatoxin treatment, and those in the control group.
 # Shiny
 
 library(shiny)
+install.packages(c("shinylive", "httpuv"))
 
 ui <- fluidPage(
   
@@ -26,3 +27,4 @@ server <- function(input, output) {
 }
 
 shinyApp(ui, server)
+
